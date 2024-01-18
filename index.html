@@ -4,15 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tailwind</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <title>Penguin fashion with tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .font-babas {
+            font-family: "Bebas Neue", sans-serif;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="w-x">
+    <header class="bg-[#FFFBF0;]">
+        <div class="px-5 lg:w-4/5 lg:mx-auto">
+            <nav class="flex items-center justify-between h-24">
+                <img class=" lg:w-1/4" src="icons/logo.png" alt="">
+                <ul class="lg:flex gap-x-10 hidden">
+                    <li class=""><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="lg:flex items-center justify-between pb-14">
+                <div>
+                    <h1 class="font-babas uppercase text-6xl">
+                        <span class="text-[#FABE4C;]">Be the Penguins</span><br>of Winter
+                    </h1>
+                    <p class="mt-5 mb-5">
+                        Lorem Ipsum is simply dummy text of the printing <br>and typesetting industry.
+                    </p>
+                    <button
+                        class="py-4 px-5 rounded-lg bg-gradient-to-r from-[#A4BC46] to-[#85A019] flex items-center justify-center">
+                        <img class="w-5 mr-2" src="icons/shopping-cart 1.png" alt="">
+                        BUY NOW
+                    </button>
 
-    </div>
+                </div>
+                <div>
+                    <img class="mt-10 lg:mt-0" src="images/model.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="w-4/5 lg:mx-auto">
+
+    </main>
 
 </body>
 
